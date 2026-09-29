@@ -1,0 +1,772 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #fff9ed;
+
+    color: #172033;
+}
+
+
+
+/* Navbar */
+
+.navbar {
+    height: 90px;
+
+    background-color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 9%;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+.logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.logo-icon {
+    width: 55px;
+    height: 55px;
+
+    background-color: #ff542b;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+
+.logo h2 {
+    font-size: 25px;
+}
+
+
+.logo p {
+    color: #778096;
+
+    margin-top: 3px;
+}
+
+
+.nav-icons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    color: #536075;
+
+    font-size: 22px;
+}
+
+
+.profile {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+
+
+.profile img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+/* Recipe */
+
+.recipe {
+    width: 82%;
+
+    max-width: 1320px;
+
+    margin: 35px auto;
+
+    background-color: white;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    display: grid;
+
+    grid-template-columns: 43% 57%;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+
+/* Image */
+
+.recipe-image {
+    position: relative;
+
+    min-height: 650px;
+}
+
+
+.recipe-image > img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+
+/* Rating */
+
+.rating {
+    position: absolute;
+
+    top: 28px;
+    left: 28px;
+
+    background-color: white;
+
+    padding: 12px 18px;
+
+    border-radius: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.rating i {
+    color: #ffb900;
+}
+
+
+.rating span {
+    color: #697489;
+}
+
+
+
+/* Time */
+
+.time-box {
+    position: absolute;
+
+    bottom: 25px;
+    left: 5%;
+
+    width: 90%;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    text-align: center;
+}
+
+
+.time-box i {
+    color: #ff542b;
+
+    font-size: 25px;
+}
+
+
+.time-box p {
+    color: #6e788c;
+
+    margin: 7px 0;
+}
+
+
+
+/* Right Side */
+
+.recipe-info {
+    padding: 45px;
+}
+
+
+.top {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+
+.easy,
+.american {
+    display: inline-block;
+
+    padding: 8px 16px;
+
+    border-radius: 20px;
+
+    margin-right: 8px;
+}
+
+
+.easy {
+    background-color: #d9f8e5;
+
+    color: #16844c;
+}
+
+
+.american {
+    background-color: #dfebff;
+
+    color: #2764d7;
+}
+
+
+h1 {
+    font-size: 40px;
+
+    margin-top: 20px;
+}
+
+
+.description {
+    font-size: 20px;
+
+    color: #667287;
+
+    margin-top: 10px;
+}
+
+
+
+/* Alert */
+
+.alert-box {
+    display: none;
+
+    background-color: #fff0f0;
+
+    border-left: 4px solid #ff3345;
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+    margin-top: 25px;
+
+    color: #d92332;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.alert-box i {
+    font-size: 22px;
+}
+
+
+.alert-box strong {
+    font-size: 16px;
+}
+
+
+.alert-box p {
+    margin-top: 5px;
+
+    font-size: 14px;
+}
+
+
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.buttons button {
+    width: 52px;
+    height: 52px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background-color: #fff0db;
+
+    color: #f4511e;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+
+
+/* Tabs */
+
+.tabs {
+    display: flex;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid #dddddd;
+
+    margin-top: 40px;
+}
+
+
+.tab {
+    border: none;
+
+    background-color: transparent;
+
+    padding: 18px 15px;
+
+    color: #6d7688;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+.tab.active {
+    color: #ff542b;
+
+    border-bottom: 2px solid #ff542b;
+}
+
+
+
+/* Content */
+
+.content {
+    background-color: #fffaf0;
+
+    height: 370px;
+
+    margin-top: 25px;
+
+    padding: 20px 25px;
+
+    overflow-y: auto;
+
+    border-radius: 15px;
+}
+
+
+#instructions,
+#nutrition,
+#tips {
+    display: none;
+}
+
+
+
+/* Ingredients */
+
+.ingredient {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 14px;
+
+    font-size: 17px;
+}
+
+
+.ingredient span {
+    width: 27px;
+    height: 27px;
+
+    background-color: #ff681d;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 14px;
+
+    flex-shrink: 0;
+}
+
+
+
+/* Instructions */
+
+.step {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 22px;
+}
+
+
+.step span {
+    width: 52px;
+    height: 52px;
+
+    background-color: #ff6800;
+
+    color: white;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    flex-shrink: 0;
+}
+
+
+.step p {
+    color: #4e5a6e;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+}
+
+
+
+/* Nutrition */
+
+.nutrition-box {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+
+.nutrition-item {
+    background-color: #f8f9fa;
+
+    min-height: 78px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 15px;
+
+    gap: 12px;
+}
+
+
+.nutrition-icon {
+    width: 44px;
+    height: 44px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+
+    flex-shrink: 0;
+}
+
+
+.nutrition-item span {
+    font-size: 16px;
+
+    color: #26354d;
+}
+
+
+.nutrition-item strong {
+    margin-left: auto;
+
+    font-size: 18px;
+
+    color: #111d32;
+}
+
+
+
+.calories {
+    background-color: #ffedd9;
+
+    color: #ff6500;
+}
+
+
+.protein {
+    background-color: #dce9ff;
+
+    color: #2875e8;
+}
+
+
+.carbs {
+    background-color: #fff8c9;
+
+    color: #d59b00;
+}
+
+
+.fat {
+    background-color: #ffe0e2;
+
+    color: #e52e3d;
+}
+
+
+.fiber {
+    background-color: #d9f8e7;
+
+    color: #16a34a;
+}
+
+
+.sodium {
+    background-color: #f9dff1;
+
+    color: #c02691;
+}
+
+
+
+
+
+.tip-item {
+    background-color: #fff9e8;
+
+    min-height: 68px;
+
+    margin-bottom: 18px;
+
+    border-left: 4px solid #ffad00;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 20px;
+}
+
+
+.tip-item i {
+    color: #ed7300;
+
+    font-size: 22px;
+
+    flex-shrink: 0;
+}
+
+
+.tip-item p {
+    color: #35445c;
+
+    font-size: 16px;
+
+    margin: 0;
+}
+
+
+
+/* Try Button */
+
+.try-button {
+    margin-top: 25px;
+
+    border: none;
+
+    background: linear-gradient(90deg, #ff6800, #ff3345);
+
+    color: white;
+
+    padding: 16px 25px;
+
+    border-radius: 13px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.try-button:hover {
+    transform: translateY(-2px);
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .recipe {
+        width: 94%;
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .recipe-image {
+        min-height: 500px;
+    }
+
+
+    .navbar {
+        padding: 0 4%;
+    }
+
+
+    .nav-icons {
+        gap: 12px;
+    }
+
+
+    .recipe-info {
+        padding: 30px;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 15px;
+    }
+
+
+    .logo h2 {
+        font-size: 19px;
+    }
+
+
+    .logo p {
+        font-size: 12px;
+    }
+
+
+    .nav-icons {
+        display: none;
+    }
+
+
+    .top {
+        display: block;
+    }
+
+
+    .buttons {
+        margin-top: 20px;
+    }
+
+
+    h1 {
+        font-size: 32px;
+    }
+
+
+    .tabs {
+        overflow-x: auto;
+    }
+
+
+    .tab {
+        white-space: nowrap;
+    }
+
+
+    .time-box {
+        padding: 15px 5px;
+    }
+
+
+    .time-box p {
+        font-size: 13px;
+    }
+
+
+    .nutrition-box {
+        grid-template-columns: 1fr;
+    }
+
+}

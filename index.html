@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>What's For Dinner</title>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style/main.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="bi bi-fork-knife"></i>
+            </div>
+
+            <div>
+
+                <h2>What's For Dinner</h2>
+
+                <p>Your daily meal inspiration</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="nav-icons">
+
+            <i class="bi bi-bookmark"></i>
+
+            <i class="bi bi-clock-history"></i>
+
+            <i class="bi bi-gear"></i>
+
+            <div class="profile">
+
+                <img src="images/user.jpg" alt="User">
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- Recipe -->
+
+    <main class="recipe">
+
+
+        <!-- Left Side -->
+
+        <div class="recipe-image">
+
+            <img id="recipeImage"
+                src="images/beef tacos.jpg"
+                alt="Beef Tacos">
+
+
+
+            <div class="rating">
+
+                <i class="bi bi-star-fill"></i>
+
+                <strong id="rating">4.6</strong>
+
+                <span id="reviews">(278 reviews)</span>
+
+            </div>
+
+
+
+            <div class="time-box">
+
+
+                <div>
+
+                    <i class="bi bi-clock"></i>
+
+                    <p>Prep Time</p>
+
+                    <strong id="prepTime">15 min</strong>
+
+                </div>
+
+
+                <div>
+
+                    <i class="bi bi-fire"></i>
+
+                    <p>Cook Time</p>
+
+                    <strong id="cookTime">20 min</strong>
+
+                </div>
+
+
+                <div>
+
+                    <i class="bi bi-people-fill"></i>
+
+                    <p>Servings</p>
+
+                    <strong id="servings">4 people</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Right Side -->
+
+        <div class="recipe-info">
+
+
+            <div class="top">
+
+
+                <div>
+
+                    <span class="easy" id="recipeLevel">
+                        Easy
+                    </span>
+
+                    <span class="american" id="recipeCategory">
+                        American
+                    </span>
+
+
+                    <h1 id="recipeName">
+                        Beef Tacos
+                    </h1>
+
+
+                    <p class="description" id="recipeDescription">
+                        Flavorful Mexican tacos with seasoned ground beef
+                    </p>
+
+
+            
+
+                    <div class="alert-box" id="alertBox">
+
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+
+                        <div>
+
+                            <strong>
+                                Extended Preparation Time
+                            </strong>
+
+                            <p>
+                                This recipe requires more than 45 minutes
+                                to prepare. Plan accordingly!
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="buttons">
+
+                    <button id="saveButton">
+
+                        <i class="bi bi-bookmark"></i>
+
+                    </button>
+
+
+                    <button id="shareButton">
+
+                        <i class="bi bi-share-fill"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Tabs -->
+
+            <div class="tabs">
+
+
+                <button class="tab active"
+                    data-tab="ingredients">
+
+                    <i class="bi bi-list-check"></i>
+
+                    Ingredients
+
+                </button>
+
+
+                <button class="tab"
+                    data-tab="instructions">
+
+                    <i class="bi bi-book"></i>
+
+                    Instructions
+
+                </button>
+
+
+                <button class="tab"
+                    data-tab="nutrition">
+
+                    <i class="bi bi-pie-chart-fill"></i>
+
+                    Nutrition
+
+                </button>
+
+
+                <button class="tab"
+                    data-tab="tips">
+
+                    <i class="bi bi-lightbulb-fill"></i>
+
+                    Chef's Tips
+
+                </button>
+
+            </div>
+
+
+
+    
+
+            <div class="content" id="ingredients">
+
+                <div id="ingredientsList"></div>
+
+            </div>
+
+
+
+
+            <div class="content" id="instructions">
+
+                <div id="instructionsList"></div>
+
+            </div>
+
+
+
+          
+
+            <div class="content" id="nutrition">
+
+                <div class="nutrition-box" id="nutritionBox"></div>
+
+            </div>
+
+
+
+            
+
+            <div class="content" id="tips">
+
+                <div id="tipsList"></div>
+
+            </div>
+
+
+
+            <!-- Try Another Recipe -->
+
+            <button class="try-button" id="tryButton">
+
+                <i class="bi bi-arrow-repeat"></i>
+
+                Try Another Recipe
+
+            </button>
+
+
+        </div>
+
+    </main>
+
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
